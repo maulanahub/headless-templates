@@ -1,12 +1,10 @@
 [build]
   command = "npm run build"
   publish = ".next"
+  node_version = "18"
 
 [template]
   incoming-hooks = ["WixBookings"]
 
 [template.environment]
-  NEXT_PUBLIC_WIX_CLIENT_ID = "Wix Headless Client ID"
-
-[build]
-  node_version = "18"
+  NEXT_PUBLIC_WIX_CLIENT_ID = "Wix Headless Client ID" 
