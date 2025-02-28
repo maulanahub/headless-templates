@@ -58,10 +58,10 @@ export default function PlansList({
   plans?: plans.PublicPlan[];
 }) {
   return (
-    <div className="max-w-full-content mx-auto">
+    <div className="max-w-[750px] mx-auto">
       {plans?.length ? (
         <div
-          className="p-4 pt-3 container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7"
+          className="p-4 pt-3 container m-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-7"
           data-testid={testIds.PLAN_LIST.CONTAINER}
         >
           {plans?.map((plan) => {
@@ -73,9 +73,9 @@ export default function PlansList({
               <li
                 data-testid={testIds.PLAN_ITEM.CONTAINER}
                 key={plan._id}
-                className="text-black w-full list-none rounded-none bg-red-300 overflow-hidden mx-auto border-0 m-0 p-0 flex flex-col"
+                className="w-full list-none rounded-none overflow-hidden mx-auto border-0 m-0 p-0 flex flex-col shadow-md"
               >
-                <div className="text-center px-9 py-7 flex flex-grow flex-col justify-start items-center w-full border-0">
+                <div className="text-center px-9 py-7 bg-[#e49b3a] max-h-[300px] flex flex-grow flex-col justify-start items-center w-full border-0">
                   <h2 className="pb-3 text-2xl">{plan.name}</h2>
                   <div className="relative pb-3">
                     <span className="text-sm align-top">
@@ -100,7 +100,7 @@ export default function PlansList({
                     </div>
                   </PlanSelect>
                 </div>
-                <div className="bg-white px-9 py-5 flex flex-col justify-start items-center w-full h-56 overflow-y-auto">
+                <div className="bg-white text-black px-9 py-5 flex flex-col justify-start items-center w-full overflow-y-auto">
                   <ul>
                     {plan.perks?.values?.map((perk, index) => (
                       <li key={index} className="py-1 text-center">

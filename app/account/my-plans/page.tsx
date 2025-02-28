@@ -17,7 +17,7 @@ export default async function MyPlansPage() {
   ]);
   return (
     <MyAccountSection member={member}>
-      <h2 className="text-highlight text-4xl">My Plans</h2>
+      <h2 className="text-4xl">My Plans</h2>
       <div className="text-sm font-open-sans-condensed py-2">
         <p className="pt-2">
           View and manage the subscriptions you have purchased
@@ -48,7 +48,7 @@ export default async function MyPlansPage() {
           <div className="mb-3">
             {"You haven't purchased any subscriptions yet."}
           </div>
-          <a href="/plans" className="text-sm text-highlight underline">
+          <a href="/plans" className="text-sm text-[#2d5a88] underline">
             View Plans & Pricing
           </a>
         </div>

@@ -7,7 +7,7 @@ export default async function MyAccountPage() {
   const { member } = await getCurrentMember(wixSession);
   return (
     <MyAccountSection member={member}>
-      <h2 className="text-highlight text-4xl">My Account</h2>
+      <h2 className="text-[#2d5a88] text-4xl">My Account</h2>
       <div className="text-sm font-open-sans-condensed py-2">
         <p className="pt-2">
           Here you can manage your orders for both pricing plans and bookings

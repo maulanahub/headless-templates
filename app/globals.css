@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-display: block;
   font-family:DINNeuzeitGroteskLTW01-_812426;
   src:url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b41558bd-2862-46c0-abf7-536d2542fa26.eot?#iefix");
   src:url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/b41558bd-2862-46c0-abf7-536d2542fa26.eot?#iefix") format("eot"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/5cee8d6e-89ad-4d8c-a0ac-584d316b15ae.woff2") format("woff2"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/388ef902-2c31-4818-abb1-a40dcd81f6d6.woff") format("woff"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/29c60077-2614-4061-aa8d-5bcfdf7354bb.ttf") format("truetype"),url("//static.parastorage.com/services/third-party/fonts/user-site-fonts/fonts/76250d27-b353-4f3b-90c6-0ff635fabaab.svg#76250d27-b353-4f3b-90c6-0ff635fabaab") format("svg");
-}
+} */
 
 @font-face {
   font-display: block;
-  font-family: 'Open Sans Condensed';
+  font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
   src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url("//static.parastorage.com/tag-bundler/api/v1/fonts-cache/googlefont/woff2/s/opensanscondensed/v14/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMR7eS2Ao.woff2") format('woff2');
@@ -43,17 +43,17 @@
   }
 
   .btn-secondary {
-    @apply text-highlight;
-    @apply bg-gray-c1;
-    @apply hover:bg-highlight;
+    @apply text-[#fff];
+    @apply bg-[#2d5a88];
+    @apply hover:bg-[#c2c2c2];
     @apply hover:text-gray-c1;
   }
 
   .btn-main {
-    @apply text-gray-c1;
-    @apply bg-highlight;
-    @apply hover:bg-gray-c2;
-    @apply hover:text-white;
+    @apply text-white;
+    @apply bg-[#e49b3a];
+    @apply hover:bg-[#fff];
+    @apply hover:text-gray-c1;
   }
 
   .btn-main[disabled], .btn-secondary[disabled] {
@@ -102,10 +102,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font: normal normal normal 18px/1.4em DINNeuzeitGroteskLTW01-_812426, sans-serif;
+  font: normal normal normal 16px/1.4em, open-sans;
   @apply bg-gray-c1;
   @apply text-white;
   @apply antialiased;
+  background-color: white;
 }
 
 a {

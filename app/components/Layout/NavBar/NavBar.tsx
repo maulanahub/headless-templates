@@ -7,12 +7,7 @@ import { StyledNavLink } from '@app/components/Layout/NavBar/NavLink';
 
 const navbarItems = [
   { scroll: true, ref: '/', label: 'Home' },
-  { scroll: false, ref: '/#about', label: 'About' },
-  { scroll: false, ref: '/#studio', label: 'The Studio' },
-  { scroll: true, ref: '/training', label: 'Training' },
-  { scroll: true, ref: '/classes-schedule', label: 'Book Online' },
   { scroll: true, ref: '/plans', label: 'Plans & Pricing' },
-  { scroll: false, ref: '/#contact', label: 'Contact' },
   {
     scroll: true,
     ref: '/account/my-account',
@@ -47,7 +42,7 @@ export function NavBar() {
             <span
               key={index}
               className={
-                'block h-[3px] w-8 bg-highlight rounded transform transition duration-500 ease-in-out ' +
+                'block h-[3px] w-8 bg-[#2d5a88] rounded transform transition duration-500 ease-in-out ' +
                 className
               }
             ></span>
@@ -57,7 +52,7 @@ export function NavBar() {
       <nav
         className={`${
           isMenuShown ? 'max-md:w-full' : 'max-md:w-0 max-md:opacity-0'
-        } w-full transition-all duration-500 ease-in-out md:block overflow-hidden max-md:absolute max-md:animate-sideways-once max-md:h-screen max-md:bg-gray-c2 max-md:pt-24 z-40 top-0 right-0`}
+        } w-full transition-all duration-500 ease-in-out md:block overflow-hidden max-md:absolute max-md:animate-sideways-once max-md:h-screen max-md:bg-[#fff] max-md:pt-24 z-40 top-0 right-0`}
       >
         <ul className="flex flex-col items-center md:flex-row gap-10 md:gap-4 min-[900px]:gap-5 lg:gap-8 start text-md leading-[22px] px-6">
           {navbarItems.map(({ ref, label, scroll, prefetch }) => (

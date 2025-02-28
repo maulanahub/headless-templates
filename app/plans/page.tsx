@@ -19,7 +19,7 @@ export default async function PlansPage({
   return (
     <div className="max-w-full-content mx-auto pb-8">
       <div className="px-3 py-12" data-testid={testIds.PLANS_PAGE.HEADER}>
-        <h1 className="text-center">Plans & Pricing</h1>
+        <h1 className="text-center text-[#2d5a88] ">Plans & Pricing</h1>
       </div>
       <PlansList plans={plans} checkoutData={checkoutData} />
     </div>

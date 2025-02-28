@@ -37,14 +37,14 @@ export default async function MyBookingsPage({
 
   return (
     <MyAccountSection member={member}>
-      <h2 className="text-highlight text-4xl">Manage Your Bookings</h2>
+      <h2 className="text-[#2d5a88] text-4xl">Manage Your Bookings</h2>
       <div className="text-sm font-open-sans-condensed py-2">
         <p className="pt-2">
           View, cancel your bookings and easily book again.
         </p>
         <p className="pt-2">Timezone: {timezoneStr}</p>
       </div>
-      <nav className="text-center sm:text-left font-open-sans-condensed text-highlight my-2 border-b border-white border-opacity-[0.04]">
+      <nav className="text-center sm:text-left font-open-sans-condensed text-[#2d5a88] my-2 border-b border-white border-opacity-[0.04]">
         {[
           { name: 'Upcoming', value: SelectedView.UPCOMING },
           { name: 'History', value: SelectedView.HISTORY },
@@ -52,7 +52,7 @@ export default async function MyBookingsPage({
           <a
             key={value}
             className={`w-20 sm:w-28 inline-block text-center py-4 border-b-[3px] border-opacity-60 ${
-              value === selectedTab ? 'border-highlight' : 'border-transparent'
+              value === selectedTab ? 'border-[#2d5a88]' : 'border-transparent'
             }`}
             href={`?view=${value}`}
           >
@@ -90,7 +90,7 @@ export default async function MyBookingsPage({
           </div>
           <a
             href="/classes-schedule"
-            className="text-sm text-highlight underline"
+            className="text-sm text-[#2d5a88] underline"
           >
             Check Out Our Classes
           </a>

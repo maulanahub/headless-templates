@@ -4,30 +4,16 @@ import ScrollIntoView from '@app/components/ScrollIntoView/ScrollIntoView';
 import Link from 'next/link';
 import testIds from '@app/utils/test-ids';
 
-const FooterNote = () => (
-  <div className="text-sm font-open-sans-condensed text-gray-c1 float-right">
-    <span>©2035 BY JOEY DIXON </span>
-    <span>Powered and secured by </span>
-    <span>
-      <a
-        className="underline"
-        href="https://wix.com/?utm_campaign=vir_created_with"
-        target="_blank"
-        rel="noreferrer noopener"
-      >
-        Wix
-      </a>
-    </span>
-  </div>
-);
-
 const Footer = () => (
   <footer
-    className="w-full m-h-56 bg-highlight leading-7 text-black text-gray-c1"
+    className="w-full bg-[#2d5a88] leading-7 text-white"
     data-testid={testIds.LAYOUT.FOOTER}
   >
-    <div className="max-w-full-content mx-auto sm:flex gap-16 pt-14 pb-10 px-3">
-      <div className="flex-1 relative">
+    <div className="pt-4 pb-4">
+      <div className="text-sm text-center font-sans">
+        <span>©2025 - Vanaya AI </span>
+      </div>
+      {/* <div className="flex-1 relative">
         <div className="">
           <p className="uppercase mb-5 sm:mb-10 text-3xl tracking-[.35em]">
             Contact Me
@@ -159,14 +145,9 @@ const Footer = () => (
                 <span>Submit</span>
               </button>
             </div>
-            <div className="mt-10 mb-5">
-              <div className="sm:absolute right-0 bottom-0">
-                <FooterNote />
-              </div>
-            </div>
           </div>
         </form>
-      </div>
+      </div> */}
     </div>
   </footer>
 );

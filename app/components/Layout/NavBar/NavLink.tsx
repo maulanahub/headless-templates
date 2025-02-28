@@ -18,8 +18,8 @@ export const StyledNavLink = ({
   <NavLink
     className={`${
       className ?? ''
-    } font-open-sans-condensed uppercase hover:text-highlight ${
-      isActive ? 'text-white' : 'text-stone-400'
+    } font-open-sans uppercase hover:text-[#2d5a88]' ${
+      isActive ? 'text-[#2d5a88]' : 'text-black'
     }`}
     {...linkProps}
   />
